@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Руслан Береговой](https://up.htmlacademy.ru/htmlcss/30/user/1093143).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Поданев](https://htmlacademy.ru/profile/mpodanev).
 
 ---
 
