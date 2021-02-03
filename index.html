@@ -5,23 +5,32 @@
     <title>Дизайн-студия "Нёрдс"</title>
 </head>
 <body>
+
     <header>
         <nav>
             <a>
                 <img src="#" alt="Логотип Нёрдс">
             </a>
             <ul>
-                <li><a href="#">СТУДИЯ</a></li>
-                <li><a href="#">КЛИЕНТЫ</a></li>
+                <li><a href="#studio">СТУДИЯ</a></li>
+                <li><a href="#clients">КЛИЕНТЫ</a></li>
                 <li><a href="catalog.html">МАГАЗИН</a></li>
-                <li><a href="#">КОНТАКТЫ</a></li>
+                <li><a href="#contacts">КОНТАКТЫ</a></li>
             </ul>
             <ul>
-                <li><a href="#">КОРЗИНА</a></li>
+                <li>
+                    <a href="#">
+                        <img src="#" alt="КОРЗИНА">
+                    </a>
+                </li>
+                <li><a href="#basket">КОРЗИНА</a></li>
             </ul>
         </nav>
+    </header>
+
+    <main>
         <section>
-            <h1>Дизайн-студия "Нёрдс"</h1> <!--Скрытиый заголовок-->
+            <h1>ДИЗАЙН-СТУДИЯ "Нёрдс"</h1> <!--Скрытый заголовок-->
             <h3>Долго, дорого,<br>скрупулезно.</h3>
             <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
             <a href="#">Узнать больше</a>
@@ -31,15 +40,9 @@
             <h3>Только ночь, только хардкор</h3>
             <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
             <a href="#">Узнать больше</a>
-            <button type="button">Показать первый слайд</button>
-            <button type="button">Показать второй слайд</button>
-            <button type="button">Показать третий слайд</button>
         </section>
-    </header>
-
-    <main>
         <section>
-            <h2>УСЛУГИ</h2> <!--Скрытиый заголовок-->
+            <h2>УСЛУГИ</h2> <!--Скрытый заголовок-->
             <ul>
                 <li>
                     <img src="#" alt="Веб-сайты">
@@ -62,7 +65,7 @@
             </ul>
         </section>
         <section>
-            <h2>О НАС</h2><!--Скрытиый заголовок-->
+            <h2 id="studio">О НАС</h2><!--Скрытый заголовок-->
             <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не покладая рук, как роботы.</p>
             <p><b>Выполняем заказы на разработку:</b></p>
@@ -91,48 +94,51 @@
             </table>
         </section>
         <section>
-            <h2>КЛИЕНТЫ</h2><!--Скрытиый заголовок-->
+            <h2 id="clients">КЛИЕНТЫ</h2><!--Скрытый заголовок-->
             <ul>
                 <li>
                     <a href="https://htmlacademy.ru/intensive/htmlcss">
-                        <span>HTML Academy</span><!--Скрытиый заголовок-->
+                        <span>HTML Academy</span><!--Скрытый заголовок-->
                         <img src="#" alt="Логотип HTML Academy">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span>Barbershop Borodinski</span><!--Скрытиый заголовок-->
-                        <img src="#" alt="Логотип Barbershop Borodinski">
-                    </a>
+                    <span>Barbershop Borodinski</span><!--Скрытый заголовок-->
+                    <img src="#" alt="Логотип Barbershop Borodinski">
                 </li>
                 <li>
-                    <a href="#">
-                        <span>Pink</span><!--Скрытиый заголовок-->
-                        <img src="#" alt="Логотип Pink">
-                    </a>
+                    <span>Pink</span><!--Скрытый заголовок-->
+                    <img src="#" alt="Логотип Pink">
                 </li>
                 <li>
-                    <a href="#">
-                        <span>Mishka</span><!--Скрытиый заголовок-->
-                        <img src="#" alt="Логотип Mishka">
-                    </a>
+                    <span>Mishka</span><!--Скрытый заголовок-->
+                    <img src="#" alt="Логотип Mishka">
                 </li>
             </ul>
         </section>
     </main>
+
     <footer>
         <section>
-            <h2>Контакты</h2><!--Скрытиый заголовок-->
+            <h2 id="contacts">КОНТАКТЫ</h2><!--Скрытый заголовок-->
             <img src="#" alt="Карта">
-            <img src="#" alt="Дизайн-студия NЁRDS расположена по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19">
-            <img src="#" alt="Маркер NЁRDS">
-            <b>NЁRDS DESIGN STUDIO</b>
-            <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+            <p><b>NЁRDS DESIGN STUDIO</b></p>
+            <p>191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a href="form.html">Напишите нам</a>
+            <a><h3>Напишите нам</h3></a><!--Скрытый заголовок-->
+            <form action="https://echo.htmlacademy.ru/courses" method="post">
+                <label for="name-field">Ваше имя:</label>
+                <input type="text" placeholder="Имя Фамилия" name="name" id="name-field">
+                <label for="email-field">Ваш email:</label>
+                <input type="email" placeholder="email@example.com" name="email" id="email-field">
+                <label for="comment-field">Текст письма:</label>
+                <textarea name="comment" id="comment-field" rows="5">В свободной форме</textarea>
+                <input type="submit" value="Отправить">
+            </form>
         </section>
         <section>
-            <h2>Мы в социальных сетях</h2><!--Скрытиый заголовок-->
+            <h2>Мы в социальных сетях</h2><!--Скрытый заголовок-->
             <ul>
                 <li>
                     <a href="#">
@@ -157,5 +163,6 @@
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
     </footer>
+
 </body>
 </html>
