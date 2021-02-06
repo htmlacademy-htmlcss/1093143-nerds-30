@@ -26,16 +26,16 @@
                 <li><a href="#">КОРЗИНА</a></li>
             </ul>
         </nav>
-        <h1>NЁRDS DESIGN STUDIO</h1>
     </header>
 
     <main>
+        <h1>NЁRDS DESIGN STUDIO</h1><!--Скрытый заголовок-->
         <section>
-            <h2>О нас</h2><!--Скрытый заголовок-->
+            <h2>ПРЕИМУЩЕСТВА</h2><!--Скрытый заголовок-->
             <ul>
                 <li>
                     <dl>
-                        <dt>Долго, дорого,<br>скрупулезно.</dt>
+                        <dt><h3>Долго, дорого,<br>скрупулезно.</h3></dt>
                         <dd>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</dd>
                     </dl>
                     <a href="#">Узнать больше</a>
@@ -44,7 +44,7 @@
                 </li>
                 <li>
                     <dl>
-                        <dt>Любим математику как никто другой.</dt>
+                        <dt><h3>Любим математику как никто другой.</h3></dt>
                         <dd>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</dd>
                     </dl>
                     <a href="#">Узнать больше</a>
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                     <dl>
-                        <dt>Только ночь, только хардкор.</dt>
+                        <dt><h3>Только ночь, только хардкор.</h3></dt>
                         <dd>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</dd>
                     </dl>
                     <a href="#">Узнать больше</a>
@@ -142,39 +142,27 @@
         <section>
             <h2 id="contacts">КОНТАКТЫ</h2><!--Скрытый заголовок--><!--id="contacts" - ссылка-якорь-->
             <img src="#" alt="Карта">
-            <h3><b>NЁRDS DESIGN STUDIO</b></h3>
+            <h3>NЁRDS DESIGN STUDIO</h3>
             <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7 (812) 275-75-75</p>
-            <a><h3>Напишите нам</h3></a><!--Скрытый заголовок-->
-            <form action="https://echo.htmlacademy.ru/courses" method="post">
-                <label for="name-field">Ваше имя:</label>
-                <input type="text" placeholder="Имя Фамилия" name="name" id="name-field">
-                <label for="email-field">Ваш email:</label>
-                <input type="email" placeholder="email@example.com" name="email" id="email-field">
-                <label for="comment-field">Текст письма:</label>
-                <textarea name="comment" id="comment-field" rows="5">В свободной форме</textarea>
-                <input type="submit" value="Отправить">
-            </form>
-        </section>
-        <section>
-            <h2>Мы в социальных сетях</h2><!--Скрытый заголовок-->
+            <p>
+                <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+            </p>
+            <a href="#">Напишите нам</a>
+            <h3>МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3><!--Скрытый заголовок-->
             <ul>
                 <li>
                     <a href="#">
-                        <span>Вконтакте</span>
                         <img src="#" alt="Вконтакте">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span>Фейсбук</span>
                         <img src="#" alt="Фейсбук">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span>Инстаграм</span>
                         <img src="#" alt="Инстаграм">
                     </a>
                 </li>
@@ -183,6 +171,24 @@
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
     </footer>
-
+<section><!--Модальное окно-->
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <label for="name-field">Ваше имя:</label>
+        <label for="email-field">Ваш email:</label>
+        <br>            
+        <input id="name-field" type="text" name="name" placeholder="Имя Фамилия">
+        <input id="email-field" type="email" name="email" placeholder="email@example.com">
+        <br>
+        <br>
+        <label for="comment-field">Текст письма:</label>
+        <br>
+        <textarea id="comment-field" name="comment" rows="5">В свободной форме</textarea>
+        <br>
+        <br>
+        <input type="submit" value="Отправить">
+    </form>
+    <button type="button">Закрыть</button>
+</section>
 </body>
 </html>
