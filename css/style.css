@@ -42,7 +42,11 @@
     --basic-dark-red: #E74246;
     --basic-darkest-red: #d7373b;
     --basic-green: #00ca74;
+    --basic-dark-green: #00bc6c;
+    --basic-darkest-green: #00aa62;
     --basic-yellow: #efc849;
+    --basic-dark-yellow: #eab534;
+    --basic-darkest-yellow: #e5a722;
 }
 
 /*Global*/
