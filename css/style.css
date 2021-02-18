@@ -1,0 +1,458 @@
+
+/*Fonts*/
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto.woff2") format("woff2"),
+        url("../fonts/roboto.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/robotomedium.woff2") format("woff2"),
+        url("../fonts/robotomedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/robotobold.woff2") format("woff2"),
+        url("../fonts/robotobold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Variables */
+
+:root {
+    --basic-black: #000000;
+    --basic-light-black: #283136;
+    --basic-white: #ffffff;
+    --basic-grey: #666666;
+    --basic-dark-grey: #4d4d4d;
+    --basic-light: #eeeeee;
+    --basic-light-grey: #ababab;
+    --basic-lightest-grey: #d7dcde;
+    --basic-shadow-grey: #b4b9bb;
+    --basic-dirty-white: #dbdbdb;
+    --basic-darkest-grey: #444444;
+    --basic-milk-white: #e1e1e1;
+    --basic-red: #fb565a;
+    --basic-dark-red: #E74246;
+    --basic-darkest-red: #d7373b;
+    --basic-green: #00ca74;
+    --basic-dark-green: #00bc6c;
+    --basic-darkest-green: #00aa62;
+    --basic-yellow: #efc849;
+    --basic-dark-yellow: #eab534;
+    --basic-darkest-yellow: #e5a722;
+}
+
+/*Global*/
+
+.page-body {
+    min-width: 1440px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--basic-black);
+    text-transform: none;
+    text-decoration: none;
+    background-color: var(--basic-white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+    background-color: var(--basic-light);
+}
+
+.main-header-logo:hover {
+    opacity: 70%;
+}
+
+.main-header-logo:active {
+    opacity: 30%;
+}
+
+.site-navigation li,
+.user-navigation li {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+
+.site-navigation-current {
+    border-bottom: 2px solid var(--basic-red);
+    /* Ссылки Студия, Клиенты и Контакты находятся на главной (текущей) странице,
+    поэтому все три с подчеркиванием красным*/
+}
+
+.site-navigation-another a:hover,
+.user-navigation-another a:hover {
+    color: var(--basic-red);
+}
+
+.site-navigation-another a:focus,
+.user-navigation-another a:focus {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+/* Features */
+
+.features {
+    background-color: var(--basic-light);
+}
+
+.features-list li{
+    list-style: none;
+}
+
+.feature-list-item {
+    text-align: left;
+}
+
+.feature-list-item-headline {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.feature-list-item-headline-desc {
+    line-height: 24px;
+    color: var(--basic-light-black);
+    margin-left: 0px;
+}
+
+/* Button Red*/
+
+.button-left {
+    font: inherit;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-red);
+    border-radius: 3px;
+    border: none;
+    padding: 16px;
+}
+
+.button-left:hover {
+    background-color: var(--basic-dark-red);
+}
+
+.button-left:focus {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: var(--basic-darkest-red);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* Button Green*/
+
+.button-middle {
+    font: inherit;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-green);
+    border-radius: 3px;
+    border: none;
+    padding: 16px;
+}
+
+.button-middle:hover {
+    background-color: var(--basic-dark-green);
+}
+
+.button-middle:focus {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: var(--basic-darkest-green);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* Button Yellow*/
+
+.button-right {
+    font: inherit;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-yellow);
+    border-radius: 3px;
+    border: none;
+    padding: 16px;
+}
+
+.button-right:hover {
+    background-color: var(--basic-dark-yellow);
+}
+
+.button-right:focus {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: var(--basic-darkest-yellow);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* Services*/
+
+.services-list li {
+    text-align: left;
+    list-style: none;
+}
+
+.services-list-item-illustration-1 {
+    background-color:  rgba(251, 86, 90, 0.3);
+}
+
+.services-list-item-illustration-2 {
+    background-color:  rgba(0, 202, 116, 0.3);
+}
+
+.services-list-item-illustration-3 {
+    background-color:  rgba(239, 200, 73, 0.3);
+}
+
+.services-list-item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.services-list-item-subtitle {
+    line-height: 24px;
+    color: var(--basic-light-black);
+}
+
+/* Studio*/
+
+.studio {
+    text-align: left;
+    color: var(--basic-light-black);
+}
+
+.studio h2 {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    color: var(--basic-black);
+}
+
+.studio-info {
+    line-height: 24px;
+}
+
+.studio-products {
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.studio-products-list {
+    line-height: 24px;
+    list-style-image: url(../img/studio-list-marker.svg);
+}
+
+.studio-productivity-caption {
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.studio-productivity-name-list-item {
+    font-weight: 400;
+    font-weight: 100;
+}
+
+.studio-productivity-value-list {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 64px;
+    color: var(--basic-black);
+}
+
+.studio-productivity-value-list sup {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 40px;
+    color: var(--basic-black);
+}
+
+/* Clients */
+
+.clients-list li {
+    text-align: center;
+    list-style: none;
+}
+
+.clients-list-item {
+    opacity: 0.2;
+}
+
+.clients-list-item:hover {
+    opacity: 1;
+}
+
+.clients-list-item:active {
+    opacity: 0.1;
+}
+
+/*Main footer*/
+
+.footer-map {
+    background-color: var(--basic-light);
+}
+
+.footer-contacts h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.footer-contacts p {
+    color: var(--basic-grey);
+}
+
+.footer-phone {
+    color: var(--basic-grey);
+    text-decoration: none;
+}
+
+.contacts-background {
+    background-color: var(--basic-white);
+}
+
+/* Social button */
+
+.footer-social-list {
+    list-style-type: none;
+    text-align: left;
+}
+
+.footer-social-list-item a{
+    text-decoration: none;
+    color: var(--basic-white);
+}
+
+.social-button {
+    background-color: var(--basic-milk-white);
+    border-radius: 40px;
+    border: none;
+    padding: 16px;
+}
+  
+.social-button:hover {
+    background-color: var(--basic-dark-red);
+    border-radius: 40px;
+    border: none;
+    padding: 16px;
+}
+  
+.social-button:active {
+    background-color: var(--basic-darkest-red);
+    border-radius: 40px;
+    border: none;
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    padding: 16px;
+}
+
+.social-button-clicked:active {
+    opacity: 0.3;
+}
+
+/* Social adds*/
+
+.footer-slogan {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+}
+
+.footer-offer {
+    line-height: 22px;
+    text-align: left;
+    color: var(--basic-dark-grey);
+}
+
+/* Modal */
+
+.modal {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+  
+.modal-description {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+}
+  
+/* Login form */
+
+.login-form-label {
+    font-weight: 700;
+}
+
+.login-form input[type="text"], 
+.login-form input[type="email"],
+.login-form textarea {
+    color: rgba(68, 68, 68, 0.5);
+    border: 2px solid var(--basic-lightest-grey);
+    border-radius: 3px;
+}
+
+.login-form input:hover[type="text"],
+.login-form input:hover[type="email"],
+.login-form textarea:hover {
+    color: rgba(68, 68, 68, 0.5);
+    border: 2px solid var(--basic-shadow-grey);
+    border-radius: 3px;
+}
+
+.login-form input:focus[type="text"],
+.login-form input:focus[type="email"],
+.login-form textarea:focus {
+    color: rgba(68, 68, 68, 1.0);
+    border: 2px solid var(--basic-black);
+    border-radius: 3px;
+}
+
+.login-form input.disabled,
+.login-form input:disabled, 
+.login-form textarea.disabled,
+.login-form textarea:disabled {
+    cursor: default;
+    color: var(--basic-dark-red);
+    border: 2px solid var(--basic-dark-red);
+    border-radius: 3px;
+}
