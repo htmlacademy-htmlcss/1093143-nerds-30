@@ -27,9 +27,9 @@
                 <div class="container">
                     <ul class="site-navigation">
                         <li class="site-navigation-current"><a href="#studionav">СТУДИЯ</a></li>
-                        <li class="site-navigation-current"><a href="#clientsnav">КЛИЕНТЫ</a></li>
+                        <li class="site-navigation-another"><a href="#clientsnav">КЛИЕНТЫ</a></li>
                         <li class="site-navigation-another"><a href="catalog.html">МАГАЗИН</a></li>
-                        <li class="site-navigation-current"><a href="#contactsnav">КОНТАКТЫ</a></li>
+                        <li class="site-navigation-another"><a href="#contactsnav">КОНТАКТЫ</a></li>
                     </ul>
                 </div>
                 <div>
@@ -193,20 +193,16 @@
     <form class="login-form" action="https://echo.htmlacademy.ru/courses" method="post">
         <p>
             <label class="login-form-label" for="name-field">Ваше имя:</label>
-            <label class="login-form-label" for="email-field">Ваш email:</label>
-            <br>
             <input class="login-icon-name" id="name-field" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+            <label class="login-form-label" for="email-field">Ваш email:</label>
             <input class="login-icon-user" id="email-field" type="email" name="email" placeholder="email@example.com">
         </p>
-        <br>
-        <br>
         <p>
             <label class="login-form-label" for="comment-field">Текст письма:</label>
-            <br>
             <textarea class="login-icon-comment" id="comment-field" name="comment" rows="5">В свободной форме</textarea>
         </p>
-        <br>
-        <br>
         <button class="button-left" type="submit" value="Отправить">Отправить</button>
     </form>
     <button class="modal-close" type="button">Закрыть</button>
